@@ -8,6 +8,26 @@ package oocminihw2;
  *
  * @author ahmed
  */
-public class Ship {
+public class Ship extends Vehicle implements Sailable{
+
+    @Override
+    public void hoistSail() {
+        System.out.println("Boat is Hoisted and speed is increasing.");
+    }
+
+    @Override
+    public void lowerSail() {
+        System.out.println("Boat is lowering and speed is decreasing.");
+    }  
+
+    @Override
+    public boolean isSailHoisted() {
+        return true;
+    }
+
+    @Override
+    public void landHo() {
+        System.out.println("Land has been spotted.");
+    } 
     
 }

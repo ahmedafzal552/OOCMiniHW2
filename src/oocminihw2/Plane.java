@@ -12,44 +12,47 @@ public class Plane extends Vehicle implements Flyable{
 
     @Override
     public void changeAltitude(float change) {
+        System.out.println("This your captain we change the altitude " + change + " ft.");
     }
 
     @Override
     public float getAltitude() {
-        return 0;
+        return 40000;
     }  
 
     @Override
     public void accelerate(float speed) {
+        System.out.println("I am Speed.." + speed);
     }
 
     @Override
     public void brake() {
+        System.out.println("Brakes Apply on Plane");
     }
 
     @Override
     public void turn(float angle) {
-        
+        System.out.println("Plane turn " + angle + " angle.");
     }
 
     @Override
     public float getDirection() {
-        return 0;
+        return 3;
     }
 
     @Override
     public float getSpeed() {
-        return 0;
+        return 1200;
     }
 
     @Override
     public String getMake() {
-        return " ";
+        return "Qatar Airways Airbus A380";
     }
 
     @Override
     public String getType() {
-        return " ";
+        return "Boeing 747";
     }
     
 }
