@@ -8,7 +8,16 @@ package oocminihw2;
  *
  * @author ahmed
  */
-public class Car extends Vehicle implements Drivable{
+public class Plane extends Vehicle implements Flyable{
+
+    @Override
+    public void changeAltitude(float change) {
+    }
+
+    @Override
+    public float getAltitude() {
+        return 0;
+    }  
 
     @Override
     public void accelerate(float speed) {
@@ -20,6 +29,7 @@ public class Car extends Vehicle implements Drivable{
 
     @Override
     public void turn(float angle) {
+        
     }
 
     @Override
@@ -41,6 +51,5 @@ public class Car extends Vehicle implements Drivable{
     public String getType() {
         return " ";
     }
-    
     
 }
